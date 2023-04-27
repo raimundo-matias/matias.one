@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS}::%{HTTP_HOST} ^off::(?:www\.)?(.+)$
+RewriteRule ^ https://%1%{REQUEST_URI} [NE,L,R]
+
+# remove uri extension "html" 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
