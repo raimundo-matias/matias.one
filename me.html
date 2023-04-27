@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>matias one</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background: url(assets/img/bg.png);
+        }
+
+        img {
+            width: 30em;
+            padding-top: 10em;
+            margin: 45.5em 50% auto 50%;
+            display: block;
+
+            transform: translate(-50%, -50%);
+            animation: fadein 4s;
+            /* Firefox */
+            -moz-animation: fadein 4s;
+            /* Safari and Chrome */
+            -webkit-animation: fadein 4s;
+            /* Opera */
+            -o-animation: fadein 4s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadein {
+
+            /* Firefox */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadein {
+
+            /* Safari and Chrome */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadein {
+
+            /* Opera */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/img/me.jpg" alt="About me by Motrix Techknowledge">
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+        });
+    </script>
+</body>
+
+</html>
