@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  php:
+    image: serversideup/php:8.2-fpm-apache
+    ports:
+      - 9991:80
+    environment:
+      SSL_MODE: 'off'
+    volumes:
+      - .:/var/www/html/public
